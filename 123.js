@@ -1,4 +1,4 @@
-const cookieName = 'sit'
+const cookieName = 'SITling'
 const cookieKey = 'ling_cookie_sit'
 const cookieVal = $request.headers['Cookie']
 
