@@ -61,16 +61,16 @@ case $input in
                 echo "你的选择:Yes"
 		echo "开始pull镜像"
 		
-		docker pull dmtc/zhan-shen
+		docker pull dmtc/zhan-shen:${version}
 
 		echo "开始安装"
 
 		echo "命令内容："
-		echo "docker run -d --net=host ${restart} --name=${name} -v ${aria2}:/downloads/aria2 -v ${utorrent}:/downloads/utorrent -v ${transmission}:/downloads/transmission -v ${qbittorrent}:/downloads/qbittorrent registry.cn-hangzhou.aliyuncs.com/dmtc/zhan-shen:${version} /bin/bash ./auto.sh"
+		echo "docker run -d --net=host ${restart} --name=${name} -v ${aria2}:/downloads/aria2 -v ${utorrent}:/downloads/utorrent -v ${transmission}:/downloads/transmission -v ${qbittorrent}:/downloads/qbittorrent dmtc/zhan-shen:${version} /bin/bash ./auto.sh"
 		echo ""
 		echo ""
 
-		docker run -d --net=host ${restart} --name=${name} -v ${aria2}:/downloads/aria2 -v ${utorrent}:/downloads/utorrent -v ${transmission}:/downloads/transmission -v ${qbittorrent}:/downloads/qbittorrent registry.cn-hangzhou.aliyuncs.com/dmtc/zhan-shen:${version} /bin/bash ./auto.sh
+		docker run -d --net=host ${restart} --name=${name} -v ${aria2}:/downloads/aria2 -v ${utorrent}:/downloads/utorrent -v ${transmission}:/downloads/transmission -v ${qbittorrent}:/downloads/qbittorrent dmtc/zhan-shen:${version} /bin/bash ./auto.sh
 		
 		
                 ;;
