@@ -585,5 +585,5 @@ rules:
   - "RULE-SET,ChinaDomain,全球直连"
   - "RULE-SET,ChinaCompanyIp,全球直连"
   - "RULE-SET,Download,全球直连"
-  - "GEOIP,CN,中国节点" # 修改：将中国IP路由到中国节点，而不是全球直连
+  - "GEOIP,CN,全球直连" # 修改：将中国IP路由到中国节点，而不是全球直连
   - "MATCH,漏网之鱼"
