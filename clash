@@ -554,7 +554,7 @@ rule-providers:
     type: http
 
 rules:
-  - "IP-CIDR,10.0.0.1/8,家庭局域网,no-resolve"
+  - "IP-CIDR,10.0.0.1/24,家庭局域网,no-resolve"
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
   - "RULE-SET,BanAD,广告拦截"
